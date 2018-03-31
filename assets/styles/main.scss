@@ -1,0 +1,22 @@
+@import 'node_modules/biomatic/dist/biomatic.atomic.min.css';
+@import 'node_modules/biomatic/dist/biomatic.utility.min.css';
+@import 'node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
+@import 'node_modules/bootstrap/scss/utilities/_embed.scss';
+@import 'assets/styles/variables';
+
+/* Begin your default styles here */
+
+._ratio {
+  background: #333;
+  width: 50%;
+  &::before {
+    content: '';
+    padding-top: 100%;
+    float: left;
+  }
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
