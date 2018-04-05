@@ -42,9 +42,7 @@ module.exports = {
   */
   plugins: [
     '~/plugins/ssr.js',
-    '~/plugins/persistedstate.js',
     '~/plugins/axios.js',
-    { src: '~/plugins/no-ssr.js', ssr: false }
   ],
   render: {
     resourceHints: false
@@ -65,14 +63,7 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    credentials: true,
-    debug: true,
-    https: true,
-    port: 443,
-    host: 'makerstation.in.th',
-    prefix: '/wp-json/api/v1',
   },
-
   /*
   ** Build configuration
   */
